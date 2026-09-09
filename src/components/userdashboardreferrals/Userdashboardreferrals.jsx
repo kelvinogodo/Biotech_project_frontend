@@ -66,7 +66,7 @@ const Userdashboardreferrals = ({route}) => {
           <div className="page-header">
               <h3>checkout your referral logs</h3>
               <h2>Referral Logs</h2>
-              <p>refer more friends to get a <b>100 USD</b> bonus</p>
+              <p>colleagues you've invited to join NIBE</p>
           </div>
           <div className="transaction-container no-ref">
             <table>
@@ -76,7 +76,6 @@ const Userdashboardreferrals = ({route}) => {
                     <td>Lastname</td>
                     <td>Joined At</td>
                     <td>Email</td>
-                    <td>commission Earned</td>
                   </tr>
                 </thead>
                 <tbody>
@@ -87,7 +86,6 @@ const Userdashboardreferrals = ({route}) => {
                         <td>{refer.lastname ? `${refer.lastname}` : ' '}</td>
                         <td>{refer.date ? `${refer.date}` : ' '}</td>
                         <td>{refer.email ? `${refer.email}` : ''}</td>
-                        <td>{refer.refBonus ? `$${refer.refBonus}` : '$0'} USD</td>
                       </tr>
                     )
                   }
@@ -99,9 +97,9 @@ const Userdashboardreferrals = ({route}) => {
           <div className="page-swiper-wrapper">
           <div className="failure-page no-referral-page">
             <img src="/eadb74787dda41cc6333341e55293432.gif" alt="" className='failure-img'/>
-            <p>You haven't referred any user yet, click below to copy your referral link to earn 10% of any deposit made by user</p>
+            <p>You haven't referred any colleagues yet. Copy your referral link below to invite fellow biomedical engineers to join NIBE.</p>
             <div className="click-to-copy-container">
-                <input type="text" value={`passiveincomeinvest.org/user/${userData && userData.username}`} ref={clipRef}/>
+                <input type="text" value={`nigerianbme.org/user/${userData && userData.username}`} ref={clipRef}/>
                 <span className={`clipboard-btn ${clipBoard ? <MdOutlineDone /> : ''}` } onClick={()=>{
                     copy()
                     setClipBoard(!clipBoard)

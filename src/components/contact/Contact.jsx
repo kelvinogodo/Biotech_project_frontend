@@ -26,6 +26,9 @@ const Contact = () => {
         e.preventDefault();
 
         emailjs.sendForm('service_2ljiy8n', 'template_hr6ase7', form.current, 'u__c9CcKEVKgaRN5U')
+        .then(() => {
+            form.current.reset();
+        })
         .then((result) => {
             console.log(result.text);
             Toast.fire({
@@ -80,35 +83,31 @@ const Contact = () => {
             </div>
         </div>
         <div className="contact-form-container">
-            <form className="contact-form"data-aos="fade-up">
+            <form ref={form} className="contact-form" data-aos="fade-up" onSubmit={sendEmail}>
                 <p className="contact-form-title">Get In Touch </p>
                 <p className="message">type in your message in the form below </p>
                     <div className="flex">
                     <label>
-                        <input required placeholder="" type="text" className="contact-form-input" />
+                        <input required placeholder="" type="text" name="firstname" className="contact-form-input" />
                         <span>Firstname</span>
                     </label>
 
                     <label>
-                        <input required placeholder="" type="text" className="contact-form-input" />
+                        <input required placeholder="" type="text" name="lastname" className="contact-form-input" />
                         <span>Lastname</span>
                     </label>
-                </div>  
-                        
+                </div>
+
                 <label>
-                    <input required placeholder="" type="email" className="contact-form-input" />
+                    <input required placeholder="" type="email" name="email" className="contact-form-input" />
                     <span>Email</span>
-                </label> 
-                    
-                <label>
-                    <input required placeholder="" type="password" className="contact-form-input" />
-                    <span>Password</span>
                 </label>
+
                 <label>
-                    <input required placeholder="" type="password" className="contact-form-input" />
-                    <span>Confirm password</span>
+                    <textarea required placeholder="" name="message" className="contact-form-input" rows="4"></textarea>
+                    <span>Message</span>
                 </label>
-                <button className="contact-form-submit">SEND</button>
+                <button className="contact-form-submit" type="submit">SEND</button>
             </form>
         </div>
         </div>

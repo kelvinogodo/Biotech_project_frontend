@@ -70,25 +70,17 @@ const Userdashboardhomepage = ({route}) => {
             <div className="overview-container">
                 <div className="overview-card">
                     <div className="amount-header">
-                        {/* <h2>membership type</h2> */}
+                        <h2>membership category</h2>
                         <div className="amount-holder">
-                            {/* <h3>$ {userData && userData.totaldeposit !== undefined ? userData.totaldeposit : ''}.00 USD</h3> */}
+                            <h3>{userData ? userData.membertype : ''}</h3>
                         </div>
                     </div>
                 </div>
                 <div className="overview-card">
                 <div className="amount-header">
-                        {/* <h2>current level</h2> */}
+                        <h2>colleagues referred</h2>
                         <div className="amount-holder">
-                            {/* <h3>${userData ? userData.totalwithdraw : ''}.00 USD </h3> */}
-                        </div>
-                    </div>
-                </div>
-                <div className="overview-card">
-                <div className="amount-header">
-                        {/* <h2>ranking status</h2> */}
-                        <div className="amount-holder">
-                            {/* <h3>${userData ? userData.funded : ''}.00 USD </h3> */}  
+                            <h3>{userData && userData.referred ? userData.referred.length : 0}</h3>
                         </div>
                     </div>
                 </div>

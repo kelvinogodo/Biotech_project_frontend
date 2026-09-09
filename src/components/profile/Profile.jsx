@@ -122,7 +122,7 @@ const Profile = ({route}) => {
         <div className="profile-page">
           <div className="page-header"> 
               <h2>Profile Settings</h2>
-              <p>Choose an investment plan to start earning immediately</p>
+              <p>Update your personal and contact information</p>
           </div>
           <div className="profile-form-conatainer">
             <form action="" className="profile-form" onSubmit={(e)=>{

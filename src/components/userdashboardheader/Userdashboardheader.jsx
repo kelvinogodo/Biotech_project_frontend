@@ -2,14 +2,11 @@ import React , {useState,useEffect} from 'react'
 import "./userdashboardheader.css"
 import { Link, useNavigate } from 'react-router-dom'
 import {BiUser,BiChevronDown} from 'react-icons/bi'
-import {RiLuggageDepositLine} from 'react-icons/ri'
-import {AiOutlineSetting,AiOutlineStock} from 'react-icons/ai'
+import {AiOutlineSetting} from 'react-icons/ai'
 import {RiLockPasswordLine} from 'react-icons/ri'
 import {FiLogOut} from 'react-icons/fi'
 import {AiOutlineClose} from 'react-icons/ai'
-import {GiReceiveMoney} from 'react-icons/gi'
 import {RxDashboard} from 'react-icons/rx'
-import {FaUserFriends} from 'react-icons/fa'
 const Userdashboardheader = ({route}) => {
     const navigate = useNavigate()
     const [dropDown,setDropDown] = useState(false)
@@ -112,10 +109,7 @@ const Userdashboardheader = ({route}) => {
                         <Link to='/dashboard'>dashboard</Link>
                     </li>
                     <li>
-                        <Link to='/fundwallet'>fundwallet</Link>
-                    </li>
-                    <li>
-                        <Link to='/plans'>invest</Link>
+                        <Link to='/referrals'>referrals</Link>
                     </li>
                 </ul> */}
             </nav>

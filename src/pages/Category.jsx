@@ -7,10 +7,16 @@ const Category = () => {
     <Header />
       <div className="policy-container">
         <div className="policy-text-container">
-          <h2>membership</h2>
+          <h2>categories of individual membership</h2>
           <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, harum. Officiis non veritatis accusamus cumque enim, id sint, dolor reprehenderit odio ut cum recusandae exercitationem ipsa similique aperiam quidem. Possimus, mollitia fugit. Architecto eum nostrum cumque explicabo dignissimos quas quibusdam perferendis fugiat? Corrupti ea veniam ab, eius tempore ipsam dolor temporibus aliquam laborum debitis et sapiente! Cum quaerat porro quasi, tempora velit ratione numquam eligendi modi pariatur adipisci libero! Veniam deleniti natus quae adipisci tempore voluptates ratione deserunt aspernatur doloribus itaque pariatur consequuntur atque similique in, cupiditate ipsum reprehenderit sapiente, dignissimos fugit. Cumque sunt accusamus unde fugit, nulla eum velit nihil, optio natus molestiae dolore ratione maiores quidem quibusdam, officia quam consectetur cum quos amet! Illo quasi aliquam, id incidunt impedit modi, minima sit ad atque dignissimos tempora aperiam iusto autem facilis perferendis natus reprehenderit fuga tenetur, at beatae! Ipsam commodi provident aliquid ratione illum aliquam recusandae, similique voluptatem veritatis.
-            </p>
+              Individual membership of the College of Biomedical Engineering and Technology (CBET) progresses through the following categories, each earned through career development courses and years of professional practice:
+          </p>
+          <p><b>Student</b> — undergraduates studying biomedical engineering, medical physics or an allied discipline.</p>
+          <p><b>Associate II</b> — entry category for new graduates and entrants into the profession.</p>
+          <p><b>Associate I</b> — awarded after completing the mandatory intermediate career development courses.</p>
+          <p><b>Graduate Member</b> — practising biomedical engineers who have satisfied the College's graduate examination requirements.</p>
+          <p><b>Member</b> — full corporate membership for established professionals in clinical, academic, industry or government practice.</p>
+          <p><b>Fellow</b> — the highest honour of the Institute and College, bestowed for distinguished professional and academic achievement.</p>
             </div>
       </div>
       <Contact />

@@ -8,9 +8,11 @@ const Association = () => {
     <Header />
       <div className="policy-container">
         <div className="policy-text-container">
-          <h2>membership</h2>
+          <h2>NABET</h2>
           <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, harum. Officiis non veritatis accusamus cumque enim, id sint, dolor reprehenderit odio ut cum recusandae exercitationem ipsa similique aperiam quidem. Possimus, mollitia fugit. Architecto eum nostrum cumque explicabo dignissimos quas quibusdam perferendis fugiat? Corrupti ea veniam ab, eius tempore ipsam dolor temporibus aliquam laborum debitis et sapiente! Cum quaerat porro quasi, tempora velit ratione numquam eligendi modi pariatur adipisci libero! Veniam deleniti natus quae adipisci tempore voluptates ratione deserunt aspernatur doloribus itaque pariatur consequuntur atque similique in, cupiditate ipsum reprehenderit sapiente, dignissimos fugit. Cumque sunt accusamus unde fugit, nulla eum velit nihil, optio natus molestiae dolore ratione maiores quidem quibusdam, officia quam consectetur cum quos amet! Illo quasi aliquam, id incidunt impedit modi, minima sit ad atque dignissimos tempora aperiam iusto autem facilis perferendis natus reprehenderit fuga tenetur, at beatae! Ipsam commodi provident aliquid ratione illum aliquam recusandae, similique voluptatem veritatis.
+              The Association of Biomedical Engineers and Technologists of Nigeria (NABET) is the affiliate wing of the Nigerian Institute for Biomedical Engineering through which companies and corporate organisations engaged in biomedical engineering, health technology and allied industries formally partner with NIBE.<br/><br/>
+              Corporate affiliation with NABET gives organisations a recognised voice within the profession, access to NIBE's technical committees and events, and a channel for supporting the training and certification standards administered by the College of Biomedical Engineering and Technology (CBET).<br/><br/>
+              Organisations interested in affiliate membership can visit the Association's official site at <a href="https://www.nabet.org.ng/">nabet.org.ng</a> for registration categories and requirements.
             </p>
             </div>
       </div>

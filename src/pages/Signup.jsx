@@ -53,93 +53,7 @@ const Signup = ({route}) => {
         )
         const res = await req.json()
         setLoader(false)
-        if(res.status === 200) { 
-          // localStorage.setItem('token', res.token)
-          
-        //   const userData = {
-        //     service_id: 'service_2ljiy8n',
-        //     template_id: 'template_audw0cr',
-        //     user_id: 'u__c9CcKEVKgaRN5U',
-        //     template_params: {
-        //         'name': `${res.name}`,
-        //         'email': `${res.email}`,
-        //     }
-        //   };
-
-        //   const adminData = {
-        //     service_id: 'service_2ljiy8n',
-        //     template_id: 'template_1tx292w',
-        //     user_id: 'u__c9CcKEVKgaRN5U',
-        //     template_params: {
-        //         'name': `jeffery Boss!`,
-        //         'email': `passiveincominvest@gmail.com`,
-        //         'message': `${res.message}`,
-        //         'reply_to': `passiveincominvest@gmail.com`,
-        //         'subject':`${res.adminSubject}`
-        //     }
-        // };
-         
-        //   if (res.referringUser === null) {
-        //         const sendMail= async()=>{
-        //         await Promise.all([
-        //         await fetch('https://api.emailjs.com/api/v1.0/email/send', {
-        //         method: 'POST',
-        //         headers:{
-        //           'Content-Type': 'application/json'
-        //         },
-        //         body: JSON.stringify(userData), 
-        //         }),
-        //         await fetch('https://api.emailjs.com/api/v1.0/email/send', {
-        //         method: 'POST',
-        //         headers:{
-        //           'Content-Type': 'application/json'
-        //         },
-        //         body: JSON.stringify(adminData), 
-        //       })
-        //       ])
-        //     }
-        //     sendMail()
-        //   }
-        //   else {
-        //     const referringUserData = {
-        //     service_id: 'service_2ljiy8n',
-        //     template_id: 'template_1tx292w',
-        //     user_id: 'u__c9CcKEVKgaRN5U',
-        //     template_params: {
-        //         'name': `${res.referringUserName}`,
-        //         'email': `${res.referringUserEmail}`,
-        //         'message': `${res.referringUserMessage}`,
-        //         'reply_to': `passiveincominvest@gmail.com`,
-        //         'subject':`${res.subject}`
-        //     }
-        //     };
-        //     const sendMail= async()=>{
-        //       await Promise.all([
-        //       await fetch('https://api.emailjs.com/api/v1.0/email/send', {
-        //       method: 'POST',
-        //       headers:{
-        //         'Content-Type': 'application/json'
-        //       },
-        //       body: JSON.stringify(userData), 
-        //       }),
-        //       await fetch('https://api.emailjs.com/api/v1.0/email/send', {
-        //       method: 'POST',
-        //       headers:{
-        //         'Content-Type': 'application/json'
-        //       },
-        //       body: JSON.stringify(referringUserData), 
-        //       }),
-        //       await fetch('https://api.emailjs.com/api/v1.0/email/send', {
-        //       method: 'POST',
-        //       headers:{
-        //         'Content-Type': 'application/json'
-        //       },
-        //       body: JSON.stringify(adminData), 
-        //     })
-        //     ])
-        //     }
-        //     sendMail()
-        // }
+        if(res.status === 200) {
         Toast.fire({
         icon: 'success',
         title: 'Account successfully created!'
@@ -169,6 +83,10 @@ const Signup = ({route}) => {
     }
     
  const membertypes = [
+    "student",
+    "associate II",
+    "associate I",
+    "graduate member",
     "member",
     "fellow",
 ]
@@ -192,7 +110,7 @@ const Signup = ({route}) => {
           <img src="/nibelogo_-removebg-preview.png" alt="" className="signup-logo" onClick={()=>{
               navigate('/')
             }}/>
-              <span class="subtitle">Get started with passive income invest, just create an account and enjoy the experience.</span>
+              <span class="subtitle">Create your NIBE member account to manage your membership and register for career development courses.</span>
               <div class="input_containers">
                 <label class="input_labels" for="email_field">Firstname</label>
                 <span className="icont">
